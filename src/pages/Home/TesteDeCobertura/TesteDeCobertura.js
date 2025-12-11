@@ -69,13 +69,13 @@ const CoverageChecker = () => {
           onChange={(e) => setBairroInput(e.target.value)}
           required
           disabled={isLoading}
-        />
-        <input
-          type="text"
-          placeholder="CEP (Opcional)"
-          value={cepInput}
-          onChange={(e) => setCepInput(e.target.value)}
-          disabled={isLoading}
+        // />
+        // <input
+        //  type="text"
+        //  placeholder="CEP (Opcional)"
+        //  value={cepInput}
+        //  onChange={(e) => setCepInput(e.target.value)}
+        //  disabled={isLoading}
         />
         <button type="submit" disabled={isLoading}>
           {isLoading ? 'Verificando...' : 'Verificar Agora'}

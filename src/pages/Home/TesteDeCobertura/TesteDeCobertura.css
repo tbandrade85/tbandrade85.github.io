@@ -104,3 +104,87 @@
     font-weight: bold;
     cursor: pointer;
 }
+/* Adicione esta regra ao .coverage-checker-container */
+.coverage-checker-container {
+    padding: 60px 20px;
+    text-align: center; /* 🎯 ESSA LINHA CENTRALIZA O TEXTO */
+    background-color: var(--color-dark-bg); 
+    color: var(--color-text-light);
+}
+
+.coverage-checker-container h2 {
+    font-size: 2em;
+    color: var(--color-alfa-blue);
+    margin-bottom: 10px;
+}
+
+.coverage-checker-container p {
+    font-size: 1.1em;
+    color: var(--color-text-secondary);
+    margin-bottom: 30px; /* Aumentei um pouco a margem para separar do formulário */
+}
+
+/* O restante do seu CSS para o formulário e resultados... */
+/* ... (Estilos anteriores do .coverage-checker-container, h2, p, etc.) ... */
+
+/* Estilos do Formulário */
+.coverage-form {
+    max-width: 600px;
+    margin: 0 auto;
+    display: flex;
+    gap: 15px; /* Espaçamento entre os campos dentro do formulário */
+    align-items: center;
+    
+    /* 🎯 ADICIONE ESTA MARGEM INFERIOR PARA ESPAÇAR O FORMULÁRIO DO RESULTADO */
+    margin-bottom: 30px; 
+}
+
+.coverage-form input[type="text"] {
+    flex-grow: 1;
+    padding: 12px;
+    border: 1px solid var(--color-text-secondary);
+    border-radius: 4px;
+    background-color: var(--color-dark-bg);
+    color: var(--color-text-light);
+    font-size: 1em;
+}
+
+.coverage-form button[type="submit"] {
+    padding: 12px 25px;
+    background-color: var(--color-alfa-orange);
+    color: var(--color-dark-bg);
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.2s;
+    white-space: nowrap; /* Evita que o texto quebre em duas linhas */
+}
+
+/* Estilos da Caixa de Resultado */
+.result-box {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    border-radius: 8px;
+    /* ... (outros estilos de cor) ... */
+}
+
+/* ... (Opcional: Media Queries para mobile) ... */
+
+@media (max-width: 600px) {
+    .coverage-form {
+        flex-direction: column;
+        gap: 10px;
+    }
+    .coverage-form input[type="text"],
+    .coverage-form button[type="submit"] {
+        width: 100%;
+        margin-right: 0;
+    }
+    
+    /* Ajuste a margem inferior para dispositivos menores, se necessário */
+    .coverage-form {
+         margin-bottom: 20px; 
+    }
+}
