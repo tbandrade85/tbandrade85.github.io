@@ -1,0 +1,106 @@
+.coverage-checker-section {
+    padding: 60px 20px;
+    background-color: #2c313a; /* Fundo levemente diferente para a seção */
+    text-align: center;
+}
+
+.coverage-container h3 {
+    color: #ff7f00; /* Título em Laranja */
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+.coverage-container p {
+    color: #ced4da;
+    margin-bottom: 30px;
+}
+
+.coverage-form {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.coverage-form input {
+    flex-grow: 1;
+    padding: 12px 15px;
+    border: 2px solid #495057;
+    border-radius: 8px;
+    background-color: #343a40;
+    color: #f8f9fa;
+    font-size: 1.05em;
+    outline: none;
+    transition: border-color 0.3s;
+}
+
+.coverage-form input:focus {
+    border-color: #007bff; /* Borda Azul no foco */
+}
+
+.coverage-form button {
+    background-color: #007bff; /* Botão em Azul Alfa */
+    color: white;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.coverage-form button:hover:not(:disabled) {
+    background-color: #0056b3; /* Azul mais escuro no hover */
+}
+
+.coverage-form button:disabled {
+    background-color: #6c757d; /* Cinza quando desabilitado (carregando) */
+    cursor: not-allowed;
+}
+
+/* --- Resultados da Cobertura --- */
+.coverage-result {
+    margin-top: 40px;
+    padding: 25px;
+    border-radius: 10px;
+    font-size: 1.1em;
+}
+
+.coverage-result p {
+    margin-top: 0;
+    margin-bottom: 15px;
+    font-weight: 500;
+}
+
+.success {
+    background-color: #28a74533; /* Fundo Verde transparente */
+    border: 2px solid #28a745; /* Borda Verde */
+    color: #f8f9fa;
+}
+
+.failure {
+    background-color: #dc354533; /* Fundo Vermelho transparente */
+    border: 2px solid #dc3545; /* Borda Vermelha */
+    color: #f8f9fa;
+}
+
+.btn-action-ok {
+    background-color: #ff7f00; /* Laranja de Ação */
+    color: #212529;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 6px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.btn-action-fail {
+    background-color: #007bff; /* Azul de Ação Secundária */
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 6px;
+    font-weight: bold;
+    cursor: pointer;
+}

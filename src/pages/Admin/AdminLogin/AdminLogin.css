@@ -1,0 +1,83 @@
+.login-container-admin {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: var(--color-dark-bg);
+}
+
+.login-box-admin {
+    background-color: var(--color-dark-card);
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.5);
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+}
+
+.login-box-admin h2 {
+    color: var(--color-alfa-orange);
+    margin-bottom: 20px;
+}
+
+.login-box-admin p {
+    color: var(--color-text-secondary);
+    margin-bottom: 30px;
+}
+
+.input-group-admin {
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+.input-group-admin label {
+    display: block;
+    color: var(--color-alfa-blue);
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.input-group-admin input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #495057;
+    border-radius: 6px;
+    background-color: #3e444b;
+    color: var(--color-text-light);
+    font-size: 1em;
+}
+
+.btn-login-admin {
+    width: 100%;
+    padding: 12px;
+    background-color: var(--color-alfa-blue);
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.btn-login-admin:hover {
+    background-color: #0056b3;
+}
+
+.error-message-admin {
+    color: #dc3545; /* Vermelho */
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+
+.footer-link a {
+    color: var(--color-alfa-orange);
+    text-decoration: none;
+    margin-top: 20px;
+    display: block;
+}
+
+.footer-link a:hover {
+    text-decoration: underline;
+}

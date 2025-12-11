@@ -1,0 +1,27 @@
+/* Definição de variáveis de cor para organização */
+:root {
+  --color-dark-bg: #212529; /* Fundo Principal Escuro */
+  --color-dark-card: #343a40; /* Fundo de Cards/Seções */
+  --color-alfa-blue: #007bff; /* Cor Principal Alfa - Azul */
+  --color-alfa-orange: #ff7f00; /* Cor de Destaque - Laranja */
+  --color-text-light: #f8f9fa;
+  --color-text-secondary: #ced4da;
+}
+
+/* Estilos de Reset e Body */
+body {
+  background-color: var(--color-dark-bg);
+  color: var(--color-text-light);
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+  line-height: 1.6;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* Estilos para a seção principal da página */
+.app-content {
+  min-height: 80vh;
+}

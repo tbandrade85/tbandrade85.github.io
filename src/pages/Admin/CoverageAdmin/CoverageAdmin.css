@@ -1,0 +1,100 @@
+.admin-container {
+    max-width: 900px;
+    margin: 50px auto;
+    padding: 30px;
+    background-color: var(--color-dark-card);
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
+}
+
+.admin-header h2 {
+    color: var(--color-alfa-orange);
+    border-bottom: 2px solid var(--color-alfa-blue);
+    padding-bottom: 10px;
+    margin-bottom: 30px;
+}
+
+/* --- Formulário de Adição --- */
+.add-form {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 40px;
+    padding: 20px;
+    background-color: #2c313a;
+    border-radius: 8px;
+}
+
+.add-form input {
+    flex-grow: 1;
+    padding: 10px;
+    border: 1px solid #495057;
+    border-radius: 5px;
+    background-color: #3e444b;
+    color: var(--color-text-light);
+}
+
+.add-form button {
+    background-color: var(--color-alfa-blue);
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.add-form button:hover {
+    background-color: #0056b3;
+}
+
+/* --- Lista de Bairros --- */
+.coverage-list {
+    list-style: none;
+    padding: 0;
+}
+
+.coverage-list li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 15px;
+    margin-bottom: 8px;
+    background-color: #3e444b;
+    border-radius: 5px;
+    font-size: 1.1em;
+}
+
+.remove-btn {
+    background-color: #dc3545; /* Vermelho para exclusão */
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+    font-size: 0.9em;
+}
+
+.remove-btn:hover {
+    background-color: #c82333;
+}
+
+.empty-list {
+    text-align: center;
+    color: var(--color-text-secondary);
+    padding: 20px;
+    border: 1px dashed #495057;
+    border-radius: 5px;
+}
+
+/* Aviso de Desenvolvimento */
+.dev-warning {
+    margin-top: 30px;
+    padding: 15px;
+    background-color: var(--color-alfa-orange);
+    color: var(--color-dark-bg);
+    border-radius: 5px;
+    font-weight: bold;
+    text-align: center;
+}

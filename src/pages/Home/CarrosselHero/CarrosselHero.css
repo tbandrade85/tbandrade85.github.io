@@ -1,0 +1,108 @@
+/* --- Container Principal --- */
+.hero-carousel-container {
+    height: 450px; /* Altura padrão do carrossel */
+    width: 100%;
+    position: relative;
+    overflow: hidden; /* Garante que apenas o slide ativo seja visível */
+    background-color: #1a1e21; /* Fundo escuro */
+}
+
+/* --- Estilo de Cada Slide --- */
+.hero-slide {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 0 20px;
+    opacity: 0;
+    transition: opacity 1s ease-in-out; /* Transição de fade suave */
+}
+
+.hero-slide.active {
+    opacity: 1;
+    z-index: 10;
+}
+
+.slide-content {
+    max-width: 800px;
+    color: white; /* Texto principal em branco */
+}
+
+.slide-content h1 {
+    font-size: 3em;
+    margin-bottom: 15px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.slide-content p {
+    font-size: 1.4em;
+    margin-bottom: 30px;
+    color: #ced4da;
+}
+
+/* --- Temas de Cores do Slide --- */
+/* Tema Azul (Fibra, Atendimento) */
+.hero-slide.blue {
+    background: linear-gradient(135deg, #007bff, #0056b3); 
+}
+.hero-slide.blue h1 {
+    color: #ff7f00; /* Título em Laranja */
+}
+
+/* Tema Laranja (Velocidade) */
+.hero-slide.orange {
+    background: linear-gradient(135deg, #ff7f00, #e66900);
+}
+.hero-slide.orange h1 {
+    color: #007bff; /* Título em Azul */
+}
+
+
+/* --- Botão de Ação do Hero --- */
+.hero-btn {
+    display: inline-block;
+    background-color: white; /* Botão em branco para máximo destaque */
+    color: #212529; 
+    padding: 12px 30px;
+    border-radius: 8px;
+    font-weight: bold;
+    font-size: 1.1em;
+    text-decoration: none;
+    transition: background-color 0.2s, transform 0.2s;
+}
+
+.hero-btn:hover {
+    background-color: #f0f0f0;
+    transform: translateY(-2px);
+}
+
+/* --- Indicadores de Navegação (Pontos) --- */
+.carousel-indicators {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 20;
+}
+
+.indicator {
+    background-color: rgba(255, 255, 255, 0.5); /* Cinza claro/transparente */
+    border: none;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    margin: 0 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.indicator.active {
+    background-color: #ff7f00; /* Ponto ativo em Laranja */
+    width: 12px;
+    height: 12px;
+}

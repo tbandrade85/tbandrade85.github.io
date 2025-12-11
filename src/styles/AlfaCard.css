@@ -1,0 +1,78 @@
+.alfa-card {
+  /* Fundo do Card ligeiramente mais claro que o fundo da página */
+  background-color: #343a40; 
+  border: 1px solid #495057; /* Borda sutil */
+  border-radius: 12px;
+  padding: 25px;
+  max-width: 300px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.4); /* Sombra mais forte no fundo escuro */
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  text-align: left;
+}
+
+.alfa-card:hover {
+  transform: translateY(-8px); /* Efeito de elevação mais pronunciado */
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.6);
+  border-color: #007bff; /* Destaca a borda no hover com a cor principal */
+}
+
+.alfa-card-header h3 {
+  color: #f8f9fa; /* Título do Plano em Branco */
+  font-size: 1.6em;
+  margin-top: 0;
+}
+
+.badge-fibra {
+  display: inline-block;
+  background-color: #ff7f00; /* Selo de Fibra em Laranja Destaque */
+  color: #212529; /* Texto Escuro no Laranja */
+  padding: 5px 10px;
+  border-radius: 6px;
+  font-size: 0.85em;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+.velocidade {
+  font-size: 2.8em;
+  font-weight: 900;
+  color: #007bff; /* Velocidade em Azul Alfa */
+  margin: 10px 0 20px 0;
+}
+
+.alfa-card-body ul {
+  list-style: none;
+  padding: 0;
+  border-top: 1px solid #495057;
+  padding-top: 15px;
+}
+
+.alfa-card-body li {
+  margin-bottom: 10px;
+  font-size: 1em;
+  color: #ced4da; /* Itens em Cinza Claro */
+}
+
+.preco-mensal {
+  font-size: 1.4em;
+  color: #ff7f00; /* Preço em Laranja Destaque */
+  font-weight: 700;
+  margin: 20px 0;
+}
+
+.btn-contratar {
+  background-color: #ff7f00; /* Botão Contratar em Laranja */
+  color: #212529; /* Texto do botão em Escuro */
+  border: none;
+  padding: 12px 25px;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+  width: 100%;
+  text-transform: uppercase;
+  transition: background-color 0.2s;
+}
+
+.btn-contratar:hover {
+  background-color: #e66900; /* Laranja um pouco mais escuro no hover */
+}

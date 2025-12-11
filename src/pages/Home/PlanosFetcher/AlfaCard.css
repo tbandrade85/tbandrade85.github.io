@@ -1,0 +1,70 @@
+.alfa-card-plano {
+    background-color: var(--color-dark-card);
+    border-radius: 8px;
+    padding: 30px 20px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5); 
+    border-left: 4px solid var(--color-alfa-blue); 
+    
+    transition: all 0.3s ease-in-out; 
+    cursor: pointer;
+    text-align: left; 
+}
+
+.alfa-card-plano:hover {
+    transform: translateY(-8px); 
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.7); 
+    border-left-color: var(--color-alfa-orange); 
+}
+
+.alfa-card-plano h3 {
+    color: var(--color-alfa-orange); 
+    font-size: 1.6em;
+    margin-bottom: 15px;
+}
+
+.alfa-card-plano .velocidade {
+    font-size: 3.5em; 
+    font-weight: 700;
+    color: var(--color-text-light);
+    line-height: 1.0;
+    margin-bottom: 5px;
+}
+
+.alfa-card-plano .velocidade small {
+    font-size: 0.4em;
+    font-weight: 400;
+    color: var(--color-text-secondary);
+    display: block; 
+}
+
+.alfa-card-plano .ideal-para {
+    color: var(--color-alfa-blue); 
+    font-style: italic;
+    margin-bottom: 20px;
+    font-size: 0.95em;
+}
+
+.alfa-card-plano .preco {
+    font-size: 1.8em;
+    color: var(--color-text-light);
+    font-weight: 600;
+    margin-bottom: 25px;
+}
+
+.btn-contratar {
+    display: block;
+    width: 100%;
+    padding: 12px;
+    background-color: var(--color-alfa-orange);
+    color: var(--color-dark-bg);
+    border: none;
+    border-radius: 4px;
+    font-weight: bold;
+    text-decoration: none;
+    text-align: center;
+    transition: background-color 0.2s;
+}
+
+.btn-contratar:hover {
+    background-color: #ffaa3a;
+}

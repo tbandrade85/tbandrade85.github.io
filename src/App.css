@@ -1,0 +1,19 @@
+:root {
+    /* Cores de Fundo (Dark Mode Moderno) */
+    --color-dark-bg: #1e1e1e;       /* Fundo principal */
+    --color-dark-card: #252526;     /* Fundo de cards/componentes */
+    
+    /* Cores da Marca */
+    --color-alfa-blue: #007ACC;     /* Azul primário (Velocidade) */
+    --color-alfa-orange: #FF8C00;   /* Destaque (Vibrante) */
+
+    /* Cores de Texto */
+    --color-text-light: #ffffff;
+    --color-text-secondary: #cccccc;
+}
+
+body {
+    background-color: var(--color-dark-bg);
+    color: var(--color-text-light);
+    font-family: Arial, sans-serif; /* Use uma fonte limpa */
+}

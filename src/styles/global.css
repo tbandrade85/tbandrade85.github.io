@@ -1,0 +1,39 @@
+/* Estilo para a página inteira */
+body {
+  background-color: #212529; /* Fundo Escuro */
+  color: #f8f9fa; /* Texto principal Branco */
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.container-planos-api {
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.container-planos-api h2 {
+  color: #007bff; /* Título em Azul Alfa */
+  margin-bottom: 5px;
+}
+
+.container-planos-api p {
+  margin-bottom: 30px;
+}
+
+.loading-message, .error-message, .no-data-message {
+  padding: 20px;
+  background-color: #343a40;
+  border-radius: 8px;
+  color: #ff7f00; /* Mensagens de status em Laranja */
+  margin: 20px auto;
+  max-width: 500px;
+}
+
+/* Flexbox para alinhar os cards horizontalmente */
+.lista-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 30px;
+}

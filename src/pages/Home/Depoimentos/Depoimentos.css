@@ -1,0 +1,51 @@
+.depoimentos-container {
+    padding: 60px 20px;
+    text-align: center;
+    background-color: var(--color-dark-bg); /* Fundo padrão */
+}
+
+.depoimentos-container h2 {
+    font-size: 2em;
+    color: var(--color-alfa-orange); /* Destaque o título */
+    margin-bottom: 40px;
+}
+
+.depoimentos-grid {
+    display: grid;
+    /* Três colunas em telas grandes */
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.depoimento-card {
+    background-color: var(--color-dark-card); /* Fundo do card */
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+    border-top: 3px solid var(--color-alfa-blue);
+    height: 100%; /* Para igualar a altura dos cards no grid */
+    text-align: left;
+    transition: transform 0.3s;
+}
+
+.depoimento-card:hover {
+    transform: translateY(-5px);
+}
+
+.depoimento-texto {
+    font-style: italic;
+    color: var(--color-text-light);
+    margin-bottom: 15px;
+    font-size: 1.05em;
+}
+
+.depoimento-autor {
+    color: var(--color-text-secondary);
+    font-size: 0.9em;
+}
+
+.depoimento-autor strong {
+    color: var(--color-alfa-blue);
+}
